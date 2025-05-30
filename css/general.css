@@ -1,0 +1,172 @@
+/* GOOGLE FONTS */
+/* Lora Font */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
+/* Poppins Font */
+/* For test purposes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+
+
+/* ----- GENERELLE STYLES ----- */
+/* ----- FARVER OG FONT SÆT ----- */
+:root {
+    /* FARVER SÆT */
+    --primary: #F9F9F9;
+    --light-primary: #256af6;
+    /* For test purposes */
+    --secondary: #050F33;
+    --accent: #DECDA1;
+
+    /* FONT SÆT */
+    --lora: "Lora", sans-serif;
+    --poppins: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+    font-family: var(--lora), sans-serif;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    line-height: 1, 5rem;
+}
+
+h1 {
+    font-size: 2, 027rem;
+}
+
+h2 {
+    font-size: 1, 802rem;
+}
+
+h3 {
+    font-size: 1, 602rem;
+}
+
+h4 {
+    font-size: 1, 424rem;
+}
+
+h5 {
+    font-size: 1.266rem;
+}
+
+h6 {
+    font-size: 1, 125rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+a {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button {
+    font-size: 1, 125rem;
+    font-weight: 600;
+    line-height: 0;
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    /* overflow: hidden; */
+
+    display: grid;
+    grid-template-rows: 5em auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "main"
+        "footer";
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: var(--primary);
+	padding: 0 2.5rem;
+	
+}
+.header {
+    grid-area: header;
+    background-color: var(--primary);
+    /* padding: 2rem; */
+}
+
+.main {
+    grid-area: main;
+    background-color: var(--primary);
+    padding: 2.5rem;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 2.5rem;
+}
+
+/* ----- TABLET BRACKPOINT ----- */
+@media (min-width: 600px) {
+    /* ----- SECTIONS ----- */
+    body {
+        grid-template-rows: 80px auto auto auto;
+    }
+    .navbar {
+        padding: 0 2rem;
+    }
+    .header {
+        padding: 0;
+        /* padding: 3rem; */
+    }
+    .main {
+        padding: 3rem;
+    }
+    .footer {
+        padding: 3rem;
+    }
+}
+
+/* ----- DESKTOP BRACKPOINT ----- */
+@media (min-width: 1024px) {
+    /* ----- SECTIONS ----- */
+    body {
+        grid-template-rows: 90px auto auto auto;
+    }
+    .navbar {
+        padding: 0 4rem;
+    }
+    .header {
+        padding: 0;
+        /* padding: 4rem; */
+    }
+    .main {
+        padding: 4rem;
+    }
+    .footer {
+        padding: 4rem;
+    }
+
+}
+
+
