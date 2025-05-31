@@ -12,6 +12,7 @@
 /* ----- GENERELLE STYLES ----- */
 /* ----- FARVER OG FONT SÆT ----- */
 :root {
+
 	/* FARVER SÆT */
 	--primary: #f9f9f9;
 	--transparent: #ffffffe6;
@@ -21,7 +22,8 @@
 	--accent-dark: #857b61;
 
 	/* FONT SÆT */
-	--lora: "Lora", sans-serif;
+	--lora: "Lora", serif;
+
 }
 
 * {
@@ -42,23 +44,23 @@ button {
     font-family: var(--lora), sans-serif;
     font-weight: 500;
     margin: 0.5rem 0;
-    line-height: 1, 5rem;
+    line-height: 1.5rem;
 }
 
 h1 {
-    font-size: 2, 027rem;
+    font-size: 2.027rem;
 }
 
 h2 {
-    font-size: 1, 802rem;
+    font-size: 1.802rem;
 }
 
 h3 {
-    font-size: 1, 602rem;
+    font-size: 1.602rem;
 }
 
 h4 {
-    font-size: 1, 424rem;
+    font-size: 1.424rem;
 }
 
 h5 {
@@ -66,7 +68,7 @@ h5 {
 }
 
 h6 {
-    font-size: 1, 125rem;
+    font-size: 1.125rem;
 }
 
 p {
@@ -80,7 +82,7 @@ a {
 }
 
 button {
-    font-size: 1, 125rem;
+    font-size: 1.125rem;
     font-weight: 600;
     line-height: 0;
     cursor: pointer;
