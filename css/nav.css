@@ -39,7 +39,7 @@
 	width: 100%;
 	justify-content: left;
 	font-family: var(--lora);
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 	color: var(--secondary);
 	text-decoration: none;
 	transition: color 0.3s ease-out;
@@ -170,10 +170,10 @@
          */
 }
 .burger span {
-	width: 2.3em;
-	height: 0.25em;
+	width: 1.6em;
+	height: 0.12em;
 	background-color: var(--secondary);
-	margin: 0.27em 0;
+	margin: 0.2em 0;
 }
 /* .burger span:hover {
         background: var(--accent-dark);
@@ -188,7 +188,7 @@
 
 /* Kryds-animation når checked */
 #menu-toggle:checked + .burger span:nth-child(1) {
-	transform: rotate(45deg) translate(9px, 9px);
+	transform: rotate(45deg) translate(6px, 6px);
 	background-color: var(--accent);
 }
 
@@ -198,7 +198,7 @@
 }
 
 #menu-toggle:checked + .burger span:nth-child(3) {
-	transform: rotate(-45deg) translate(9px, -9px);
+	transform: rotate(-45deg) translate(6px, -6px);
 	background-color: var(--accent);
 }
 
