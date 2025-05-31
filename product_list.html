@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Produkter</title>
+
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/productlist.css" />
+    <script src="/js/product_list.js" defer></script>
+  </head>
+
+  <body>
+    <!------------ HEADER ------------>
+    <header></header>
+
+    <!------------ MAIN ------------>
+    <main id="list_main">
+      <div id="product_list_header">
+        <h1>SANDBOX</h1>
+      </div>
+
+      <section id="product_list_container">
+        <article id="filter_container">
+          <aside>
+            <span>&#43;</span>
+            <select id="materialSelector">
+              <option value="none">Alle</option>
+              <option value="gold">Guld</option>
+              <option value="silver">Sølv</option>
+              <option value="whitegold">Hvidguld</option>
+            </select>
+          </aside>
+          <aside>
+            <span>&#43;</span>
+            <select id="brandSelector">
+              <option value="none">Alle</option>
+              <option value="Aqua Dulce">Aqua Dulce</option>
+              <option value="BNH Kaeder & Smykker">BNH Kæder og Smykker</option>
+              <option value="Georg Jensen">Georg Jensen</option>
+              <option value="Guldsmed Pade">Guldsmed Pade</option>
+              <option value="Christina">Christina</option>
+              <option value="IX Studios">IX Studios</option>
+              <option value="Mads Z">Mads Z</option>
+              <option value="Sif Jakobs Smykker">Sif Jakobs Smykker</option>
+              <option value="Spirit Icons">Spirit Icons</option>
+              <option value="Studio Z">Studio Z</option>
+            </select>
+          </aside>
+          <aside>
+            <span>&#43;</span>
+            <select id="typeSelector">
+              <option value="none">Alle</option>
+              <option value="bracelet">Armbånd</option>
+              <option value="earring">Øreringe</option>
+              <option value="necklace">Halskæder</option>
+              <option value="finger">Ringe</option>
+            </select>
+          </aside>
+        </article>
+
+        <aside id="product_list"></aside>
+      </section>
+    </main>
+
+    <!------------ FOOTER ------------>
+    <footer>
+      <p>Copyright © 2025. Velbekommen. All rights reserved.</p>
+    </footer>
+
+    <!-- burgermenu script -->
+    <!-- <script src="./WEBSITE/JAVASCRIPT/script.js"></script> -->
+  </body>
+</html>

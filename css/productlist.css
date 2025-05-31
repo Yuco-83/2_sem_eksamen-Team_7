@@ -1,0 +1,165 @@
+/* GOOGLE FONTS */
+/* Lora Font */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
+/* Poppins Font */
+/* For test purposes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+
+
+/* ----- GENERELLE STYLES ----- */
+/* ----- FARVER OG FONT SÆT ----- */
+:root {
+    /* FARVER SÆT */
+    --primary: #F9F9F9;
+    --light-primary: #256af6;
+    /* For test purposes */
+    --secondary: #050F33;
+    --accent: #DECDA1;
+
+    /* FONT SÆT */
+    --lora: "Lora", sans-serif;
+    --poppins: "Poppins", sans-serif;
+}
+
+
+/* MOBIL */
+p, h1, h2, a {
+    font-family: var(--lora);
+}
+
+a {
+    text-decoration: none;
+}
+
+#product_list_header {
+    color: var(--secondary);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#product_list_container {
+    margin-bottom: 2rem;
+}
+
+#filter_container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#filter_container aside {
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+}
+
+#filter_container span {
+    color: var(--accent);
+    font-size: 1.8rem;
+}
+
+#product_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
+        gap: 1rem;
+        justify-content: center;
+    }
+
+select {
+    appearance: none;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-color: var(--primary);
+    font-family: var(--lora);
+    font-size: 1.2rem;
+    width: 80px;
+}
+
+select:focus {
+outline: none;
+}
+
+#product_card {
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#product_card h2 {
+color: var(--secondary);
+font-family: var(--lora);
+font-size: 1.7rem;
+}
+
+
+.rating {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+.cuisine {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-weight: normal;
+    }
+
+#product_card img {
+    max-width: 100%;
+}
+
+
+
+/* DESKTOP */
+@media (width >768px) {
+
+
+    #product_list_container {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 1rem;
+    }
+
+#filter_container {
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: left;
+    position: sticky;
+    top: 15%;
+    margin-top: 0;
+    margin-bottom: auto;
+    max-width: 100%;
+}
+
+#filter_container aside {
+    justify-content: left;
+}
+
+
+    #product_card {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    gap: 0.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    }
+
+
+    .rating {
+        margin: 0;
+    }
+
+}
