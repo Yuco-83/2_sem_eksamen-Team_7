@@ -19,16 +19,13 @@
     --secondary: #050F33;
     --accent: #DECDA1;
 
-    /* FONT SÆT */
-    --lora: "Lora", sans-serif;
-    --poppins: "Poppins", sans-serif;
 }
 
 
 /* MOBIL */
-p, h1, h2, a {
+/* p, h1, h2, a {
     font-family: var(--lora);
-}
+} */
 
 a {
     text-decoration: none;
@@ -70,7 +67,7 @@ a {
 #product_list {
         display: grid;
         grid-template-columns: repeat(auto-fit, 300px);
-        gap: 1rem;
+        gap: 4rem;
         justify-content: center;
     }
 
@@ -89,7 +86,7 @@ outline: none;
 }
 
 #product_card {
-    max-width: 300px;
+    max-width: 250px;
     margin: auto;
     overflow: hidden;
 }
@@ -98,7 +95,7 @@ outline: none;
 #product_card h2 {
 color: var(--secondary);
 font-family: var(--lora);
-font-size: 1.7rem;
+font-size: 1.2rem;
 }
 
 
@@ -117,6 +114,7 @@ font-size: 1.7rem;
 
 #product_card img {
     max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 
@@ -124,6 +122,9 @@ font-size: 1.7rem;
 /* DESKTOP */
 @media (width >768px) {
 
+#list_main {
+    padding: 4rem;
+}
 
     #product_list_container {
         display: grid;
@@ -146,12 +147,16 @@ font-size: 1.7rem;
     justify-content: left;
 }
 
+#product_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 200px); 
+    }
 
-    #product_card {
+    #product_card, #product_card a {
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
-    grid-row: span 5;
+    grid-row: span 3;
     gap: 0.5rem;
     margin: 0;
     margin-bottom: 2rem;
