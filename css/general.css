@@ -12,16 +12,16 @@
 /* ----- GENERELLE STYLES ----- */
 /* ----- FARVER OG FONT SÆT ----- */
 :root {
-    /* FARVER SÆT */
-    --primary: #F9F9F9;
-    --light-primary: #256af6;
-    /* For test purposes */
-    --secondary: #050F33;
-    --accent: #DECDA1;
+	/* FARVER SÆT */
+	--primary: #f9f9f9;
+	--transparent: #ffffffe6;
+	--secondary: #050f33;
+	--secondary-light: #353e5e;
+	--accent: #decda1;
+	--accent-dark: #857b61;
 
-    /* FONT SÆT */
-    --lora: "Lora", sans-serif;
-    --poppins: "Poppins", sans-serif;
+	/* FONT SÆT */
+	--lora: "Lora", sans-serif;
 }
 
 * {
