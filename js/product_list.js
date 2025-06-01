@@ -22,10 +22,40 @@ function hentData() {
 hentData();
 // fetch sektion slut
 
+// SEKTION TIL FILTER SIDEMENU
+const filterKnap = document.getElementById("filter_knap");
+
+filterKnap.addEventListener("click", showFilterMenu);
+
+function showFilterMenu() {
+  let filterContainer = document.getElementById("filter_container");
+  filterContainer.classList.add("showmenu");
+  console.log("davs");
+}
+
+// opretter konstant for hero kategorier
+const braceletSelector = document.getElementById("bracelet");
+const ringSelector = document.getElementById("ring");
+const necklaceSelector = document.getElementById("necklace");
+const earringSelector = document.getElementById("earring");
+
+// lytter efter når hero kategori vælges
+braceletSelector.addEventListener("click", setTypeBracelet);
+ringSelector.addEventListener("click", setTypeRing);
+necklaceSelector.addEventListener("click", setTypeNecklace);
+earringSelector.addEventListener("click", setTypeEarring);
+
+// SELECT SEKTION
 // opretter konstant for selects
 const selectMaterial = document.querySelector("#materialSelector");
 const selectBrand = document.querySelector("#brandSelector");
 const selectType = document.querySelector("#typeSelector");
+
+// lytter efter når filter skiftes
+selectMaterial.addEventListener("change", filterMaterial);
+selectBrand.addEventListener("change", filterBrand);
+selectType.addEventListener("change", filterType);
+// SELECT SEKTION SLUT
 
 // viser produkter når brugeren vælger et filter
 function showProduct(productData, event) {
@@ -70,11 +100,6 @@ function showProduct(productData, event) {
   productList.innerHTML = markup;
 }
 
-// lytter efter når filter skiftes
-selectMaterial.addEventListener("change", filterMaterial);
-selectBrand.addEventListener("change", filterBrand);
-selectType.addEventListener("change", filterType);
-
 function filterMaterial(event) {
   material = event.target.value;
   if (material == "none") {
@@ -110,4 +135,48 @@ function filterType(event) {
 
     showProduct(filteredTypeData);
   }
+}
+
+function setTypeBracelet() {
+  selectType.value = "bracelet";
+  type = selectType.value;
+
+  const filteredTypeData = filteredProducts.filter((product) => product.type.includes(type));
+
+  showProduct(filteredTypeData);
+
+  document.getElementById("product_list_header").scrollIntoView({ behavior: "smooth" });
+}
+
+function setTypeRing() {
+  selectType.value = "finger";
+  type = selectType.value;
+
+  const filteredTypeData = filteredProducts.filter((product) => product.type.includes(type));
+
+  showProduct(filteredTypeData);
+
+  document.getElementById("product_list_header").scrollIntoView({ behavior: "smooth" });
+}
+
+function setTypeNecklace() {
+  selectType.value = "necklace";
+  type = selectType.value;
+
+  const filteredTypeData = filteredProducts.filter((product) => product.type.includes(type));
+
+  showProduct(filteredTypeData);
+
+  document.getElementById("product_list_header").scrollIntoView({ behavior: "smooth" });
+}
+
+function setTypeEarring() {
+  selectType.value = "earring";
+  type = selectType.value;
+
+  const filteredTypeData = filteredProducts.filter((product) => product.type.includes(type));
+
+  showProduct(filteredTypeData);
+
+  document.getElementById("product_list_header").scrollIntoView({ behavior: "smooth" });
 }

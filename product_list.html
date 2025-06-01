@@ -6,67 +6,152 @@
     <meta name="robots" content="noindex" />
     <title>Produkter</title>
 
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/productlist.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/productlist.css" />
     <script src="/js/product_list.js" defer></script>
   </head>
 
   <body>
-    <!------------ HEADER ------------>
     <header></header>
 
-    <!------------ MAIN ------------>
     <main id="list_main">
-      <div id="product_list_header">
-        <h1>SANDBOX</h1>
-      </div>
+      <section id="category_container">
+        <aside id="bracelet">
+          <img src="/assets/productlist-billeder/ur-kompresset.webp" alt="img" />
+          <h1>ARMBÅND</h1>
+        </aside>
+        <aside id="ring">
+          <img src="/assets/productlist-billeder/ur-kompresset.webp" alt="img" />
+          <h1>RINGE</h1>
+        </aside>
+        <aside id="necklace">
+          <img src="/assets/productlist-billeder/ur-kompresset.webp" alt="img" />
+          <h1>HALSKÆDER</h1>
+        </aside>
+        <aside id="earring">
+          <img src="/assets/productlist-billeder/ur-kompresset.webp" alt="img" />
+          <h1>ØRERINGE</h1>
+        </aside>
+      </section>
+
+      <section id="product_list_header">
+        <h1>Smykker</h1>
+        <span></span>
+        <article>
+          <p>Hos Guldsmed Pade finder du altid et stort udvalg af lækre smykker fra mange af de kendte mærker.</p>
+          <p>Hos os kan du købe online allerede i dag, for her er butikken åben 24 timers i døgnet.</p>
+        </article>
+      </section>
 
       <section id="product_list_container">
+        <div>
+          <button id="filter_knap">hej</button>
+        </div>
         <article id="filter_container">
-          <aside>
-            <span>&#43;</span>
-            <select id="materialSelector">
-              <option value="none">Alle</option>
-              <option value="gold">Guld</option>
-              <option value="silver">Sølv</option>
-              <option value="whitegold">Hvidguld</option>
-            </select>
-          </aside>
-          <aside>
-            <span>&#43;</span>
-            <select id="brandSelector">
-              <option value="none">Alle</option>
-              <option value="Aqua Dulce">Aqua Dulce</option>
-              <option value="BNH Kaeder & Smykker">BNH Kæder og Smykker</option>
-              <option value="Georg Jensen">Georg Jensen</option>
-              <option value="Guldsmed Pade">Guldsmed Pade</option>
-              <option value="Christina">Christina</option>
-              <option value="IX Studios">IX Studios</option>
-              <option value="Mads Z">Mads Z</option>
-              <option value="Sif Jakobs Smykker">Sif Jakobs Smykker</option>
-              <option value="Spirit Icons">Spirit Icons</option>
-              <option value="Studio Z">Studio Z</option>
-            </select>
-          </aside>
-          <aside>
-            <span>&#43;</span>
-            <select id="typeSelector">
-              <option value="none">Alle</option>
-              <option value="bracelet">Armbånd</option>
-              <option value="earring">Øreringe</option>
-              <option value="necklace">Halskæder</option>
-              <option value="finger">Ringe</option>
-            </select>
-          </aside>
+          <h1 class="filter_h1">Filtrer</h1>
+          <div id="filter_aside_container">
+            <aside>
+              <label for="materialSelector">Materialer</label>
+              <div>
+                <span>&#43;</span>
+                <select id="materialSelector">
+                  <option value="none">Alle</option>
+                  <option value="gold">Guld</option>
+                  <option value="silver">Sølv</option>
+                  <option value="whitegold">Hvidguld</option>
+                </select>
+              </div>
+            </aside>
+            <aside>
+              <label for="brandSelector">Brands</label>
+              <div>
+                <span>&#43;</span>
+                <select id="brandSelector">
+                  <option value="none">Alle</option>
+                  <option value="Aqua Dulce">Aqua Dulce</option>
+                  <option value="BNH Kaeder & Smykker">BNH Kæder og Smykker</option>
+                  <option value="Georg Jensen">Georg Jensen</option>
+                  <option value="Guldsmed Pade">Guldsmed Pade</option>
+                  <option value="Christina">Christina</option>
+                  <option value="IX Studios">IX Studios</option>
+                  <option value="Mads Z">Mads Z</option>
+                  <option value="Sif Jakobs Smykker">Sif Jakobs Smykker</option>
+                  <option value="Spirit Icons">Spirit Icons</option>
+                  <option value="Studio Z">Studio Z</option>
+                </select>
+              </div>
+            </aside>
+            <aside>
+              <label for="typeSelector">Smykketype</label>
+              <div>
+                <span>&#43;</span>
+                <select id="typeSelector">
+                  <option value="none">Alle</option>
+                  <option value="bracelet">Armbånd</option>
+                  <option value="earring">Øreringe</option>
+                  <option value="necklace">Halskæder</option>
+                  <option value="finger">Ringe</option>
+                </select>
+              </div>
+            </aside>
+          </div>
         </article>
 
         <aside id="product_list"></aside>
       </section>
     </main>
 
-    <!------------ FOOTER ------------>
     <footer>
-      <p>Copyright © 2025. Velbekommen. All rights reserved.</p>
+      <section id="footer_service">
+        <article>
+          <p>Fysisk butik i Espergærde</p>
+        </article>
+        <article>
+          <p>Gratis fragt i hele Danmark</p>
+        </article>
+        <article>
+          <p>Landsdækkende bytteservice</p>
+        </article>
+      </section>
+      <span class="footer_line"></span>
+      <section id="footer_info">
+        <article>
+          <h3>Guldsmed Pade</h3>
+          <p>Nørre torv 8, 3060 Espergærde</p>
+          <p>CVR: 34024022</p>
+          <p>guldsmedpade@gmail.com</p>
+          <p>+45 4913 4823</p>
+        </article>
+        <article>
+          <h3>Åbningstider</h3>
+          <p>Man - Fre: 9:30 - 18:00</p>
+          <p>Lør: 9:30 - 15:00</p>
+        </article>
+        <article>
+          <h3>Generelt</h3>
+          <p>Handelsbetingelser</p>
+          <p>Fortrydelsesret</p>
+          <p>Fortrydelsesformular</p>
+          <p>Fragt</p>
+        </article>
+        <article>
+          <h3>Nyhedsbrev</h3>
+          <p>Tilmeld dig vores nyhedsbrev for at holde dig opdateret på nyheder og tidens trend.</p>
+          <div></div>
+        </article>
+      </section>
+      <span class="footer_line"></span>
+      <section id="footer_copyright">
+        <img class="emark" src="assets/e-maerket-03-1024x306.webp" alt="emark" />
+        <p class="copyrights">2025 guldsmedpade-shop</p>
+        <div class="some_icons">
+          <div>
+            <img src="assets/Facebook.svg" alt="facebook" />
+            <img src="assets/YouTube.svg" alt="youtube" />
+            <img src="assets/Instagram.svg" alt="instagram" />
+          </div>
+        </div>
+      </section>
     </footer>
 
     <!-- burgermenu script -->
