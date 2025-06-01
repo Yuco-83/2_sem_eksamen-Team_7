@@ -134,17 +134,17 @@ body {
         grid-template-rows: 80px auto auto auto;
     }
     .navbar {
-        padding: 0 2rem;
+        padding: 0 2em;
     }
     .header {
         padding: 0;
         /* padding: 3rem; */
     }
     .main {
-        padding: 3rem;
+        padding: 3em;
     }
     .footer {
-        padding: 3rem;
+        padding: 3em;
     }
 }
 
