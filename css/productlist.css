@@ -37,7 +37,9 @@ a {
     text-decoration: none;
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* pil ved mig  */
 #category_container {
@@ -48,6 +50,25 @@ a {
   user-select: none;
 }
 
+.category_wrapper {
+    position: relative;
+}
+.category_wrapper .leftarrow {
+   position: absolute;
+   bottom: 0;
+   left: 0.7rem;
+   transform: translate(0, -50%);
+   opacity: 30%;
+}
+
+.category_wrapper .rightarrow{
+   position: absolute;
+   bottom: 1.3rem;
+   right: 0.7rem;
+   transform: translate(0, -50%);
+   transform: scale(-1, -1);
+   opacity: 30%;
+}
 
 /* pil ved mig  */
 #category_container aside {
@@ -341,6 +362,10 @@ font-size: 1.2rem;
         gap: 1rem;
         padding: 4rem;
     }
+
+.category_wrapper .leftarrow, .rightarrow {
+  display: none;
+}
 
 #filter_knap {
     display: none;
