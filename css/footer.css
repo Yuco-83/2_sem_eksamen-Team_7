@@ -1,0 +1,125 @@
+/* Baseline */
+/* GOOGLE FONTS */
+/* Lora Font */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+
+/* ----- GENERELLE STYLES ----- */
+/* ----- FARVER OG FONT SÆT ----- */
+:root {
+    /* FARVER SÆT */
+    --primary: #f9f9f9;
+	--transparent: #ffffffe6;
+	--secondary: #050f33;
+	--secondary-light: #353e5e;
+	--accent: #decda1;
+	--accent-dark: #857b61;
+
+	/* FONT SÆT */
+	--lora: "Lora", serif;
+}
+
+/* FOOTER SEKTION START  */
+footer {
+    background-color: var(--secondary);
+}
+
+footer p {
+    color: rgb(222, 222, 222);
+}
+
+footer h3 {
+    color: var(--accent);
+}
+
+#footer_service {
+    text-align: center;
+    padding: 2rem;
+}
+
+#footer_service p {
+    font-size: 1.2rem;
+}
+
+#footer_info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.footer_line {
+    display: block;
+    background-color: var(--accent);
+    width: 86%;
+    height: 1px;
+    margin: auto;
+}
+
+#footer_copyright {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.emark {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 90px;
+    height: 30px;
+}
+
+.copyrights {
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+}
+
+.some_icons {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.some_icons div {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 1rem;
+}
+/* FOOTER SEKTION SLUT  */
+
+/* Desktop layout */
+@media (min-width: 768px) {
+ /* FOOTER DESKTOP SEKTION START  */
+
+    .footer_line {
+        width: 95%;
+    }
+
+#footer_service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+    #footer_info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 4rem;
+        /* margin: auto; */
+    }
+
+    #footer_copyright {
+        padding: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+/* FOOTER DESKTOP SEKTION SLUT  */
+}

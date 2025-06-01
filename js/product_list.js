@@ -24,13 +24,19 @@ hentData();
 
 // SEKTION TIL FILTER SIDEMENU
 const filterKnap = document.getElementById("filter_knap");
+const filterLukKnap = document.getElementById("filter_toggle_container");
 
 filterKnap.addEventListener("click", showFilterMenu);
+filterLukKnap.addEventListener("click", hideFilterMenu);
 
 function showFilterMenu() {
   let filterContainer = document.getElementById("filter_container");
   filterContainer.classList.add("showmenu");
-  console.log("davs");
+}
+
+function hideFilterMenu() {
+  let filterContainer = document.getElementById("filter_container");
+  filterContainer.classList.remove("showmenu");
 }
 
 // opretter konstant for hero kategorier
