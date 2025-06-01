@@ -1,10 +1,6 @@
 /* GOOGLE FONTS */
 /* Lora Font */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
-/* Poppins Font */
-/* For test purposes */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
-
 
 
 
@@ -21,13 +17,16 @@
 	--accent-dark: #857b61;
 
 	/* FONT SÆT */
-	--lora: "Lora", sans-serif;
+	--lora: "Lora", serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--lora);
+	/* color: var(--secondary); */
+	
 }
 
 h1,
@@ -39,7 +38,7 @@ h6,
 p,
 a,
 button {
-    font-family: var(--lora), sans-serif;
+    font-family: var(--lora), serif;
     font-weight: 500;
     margin: 0.5rem 0;
     line-height: 1, 5rem;
@@ -66,22 +65,23 @@ h5 {
 }
 
 h6 {
-    font-size: 1, 125rem;
+    font-size: 1.125rem;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
 a {
-    font-size: 18px;
+    font-size: 0.9rem;
+    font-weight: 400;
     cursor: pointer;
 }
 
 button {
-    font-size: 1, 125rem;
-    font-weight: 600;
+    font-size: 1.125rem;
+    font-weight: 500;
     line-height: 0;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ body {
 .navbar {
     grid-area: navbar;
     background-color: var(--primary);
-	padding: 0 2.5rem;
+	/* padding: 0 2.5rem; */
 	
 }
 .header {
@@ -126,8 +126,8 @@ body {
     padding: 2.5rem;
 }
 
-/* ----- TABLET BRACKPOINT ----- */
-@media (min-width: 600px) {
+/* ----- TABLET ---> Desktop BRACKPOINT ----- */
+@media (min-width: 1060px) {
     /* ----- SECTIONS ----- */
     body {
         grid-template-rows: 80px auto auto auto;
@@ -148,18 +148,18 @@ body {
 }
 
 /* ----- DESKTOP BRACKPOINT ----- */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) { */
     /* ----- SECTIONS ----- */
-    body {
+    /* body {
         grid-template-rows: 90px auto auto auto;
     }
     .navbar {
         padding: 0 4rem;
     }
     .header {
-        padding: 0;
+        padding: 0; */
         /* padding: 4rem; */
-    }
+    /* }
     .main {
         padding: 4rem;
     }
@@ -167,6 +167,6 @@ body {
         padding: 4rem;
     }
 
-}
+} */
 
 

@@ -1,10 +1,6 @@
 /* GOOGLE FONTS */
 /* Lora Font */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
-/* Poppins Font */
-/* For test purposes */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
-
 
 
 
@@ -13,22 +9,22 @@
 /* ----- FARVER OG FONT SÆT ----- */
 :root {
     /* FARVER SÆT */
-    --primary: #F9F9F9;
-    --light-primary: #256af6;
-    /* For test purposes */
-    --secondary: #050F33;
-    --accent: #DECDA1;
+    --primary: #f9f9f9;
+	--transparent: #ffffffe6;
+	--secondary: #050f33;
+	--secondary-light: #353e5e;
+	--accent: #decda1;
+	--accent-dark: #857b61;
 
-    /* FONT SÆT */
-    --lora: "Lora", sans-serif;
-    --poppins: "Poppins", sans-serif;
+	/* FONT SÆT */
+	--lora: "Lora", serif;
 }
 
 
 /* MOBIL */
-p, h1, h2, a {
+/* p, h1, h2, a {
     font-family: var(--lora);
-}
+} */
 
 a {
     text-decoration: none;
