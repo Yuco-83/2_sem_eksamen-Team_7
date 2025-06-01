@@ -1,0 +1,66 @@
+#single_main {
+    margin: 1rem;
+}
+
+#size {display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;}
+
+.sizebtn {
+    padding: 1.3rem 1.7rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+#amount {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+input {
+    padding: 1rem;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+#buybtn {
+    padding: 1.6rem 9.7rem;
+     background-color: black;
+  color: white;
+  border: none;
+}
+
+#buybtn:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+a {
+    color: black;
+}
+
+#share {
+    display: flex;
+    align-items: center;
+}
+
+#related_products {
+    position: relative;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+    width: 100%;
+    max-width: 100%;
+    grid-row: span 3;
+  align-items: center;
+  padding: 10px;
+}
+
+.card {padding: 10px;
+    margin: 0.5rem;
+    text-align: center; }
+
+.productimg {
+    max-width: 100%;
+}
