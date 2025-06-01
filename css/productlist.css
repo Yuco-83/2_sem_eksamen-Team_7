@@ -1,13 +1,10 @@
 /* GOOGLE FONTS */
 /* Lora Font */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
-<<<<<<< HEAD
-=======
 
 /* open sans font  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
 
 
 
@@ -16,7 +13,6 @@
 /* ----- FARVER OG FONT SÆT ----- */
 :root {
     /* FARVER SÆT */
-<<<<<<< HEAD
     --primary: #f9f9f9;
 	--transparent: #ffffffe6;
 	--secondary: #050f33;
@@ -26,29 +22,12 @@
 
 	/* FONT SÆT */
 	--lora: "Lora", serif;
-=======
-    --primary: #ffffff;
-    --light-primary: #256af6;
-    /* For test purposes */
-    --secondary: #050F33;
-    --accent: #DECDA1;
-
-    /* FONT SÆT */
-    --lora: "Lora", serif;
-    --open: "Open Sans", sans-serif;
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
 }
 
 * {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-/* MOBIL */
-/* p, h1, h2, a {
-    font-family: var(--lora);
-} */
-=======
 body {
     background-color: var(--primary);
 }
@@ -56,7 +35,6 @@ body {
 #list_main {
     padding: 0;
 }
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
 
 a {
     text-decoration: none;
@@ -150,26 +128,63 @@ a {
 }
 
 #product_list_container div button {
-    display: none;
+    /* display: none; */
     padding: 20px;
 }
 
 #filter_container {
     position: fixed;
-    left: -100%;
-    top: 0;
-    width: 100%;
+    left: 0;
+    top: 10%;
+    width: 80%;
     height: 100%;
     margin: auto;
     margin-bottom: 2rem;
     background-color: var(--primary);
     padding: 20px;
+    box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.289);
     /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 2rem;; */
 }
 
+.filter_menu_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0.2em 0 0;
+    top: 0;
+}
+
+/* LUK KNAP FOR FILTER SIDEMENU  */
+
+#filter_toggle_container {
+    position: relative;
+    height: 20px;
+    top: 0.8rem;
+    cursor: pointer;
+}
+
+#filter_toggle_container span {
+    display: block;
+	width: 1.6em;
+	height: 0.12em;
+	background-color: var(--secondary);
+	margin: 0.2em 0;
+}
+
+#filter_toggle_container span:nth-child(1) {
+	transform: rotate(45deg) translate(2px, 2px);
+	background-color: var(--secondary);
+}
+
+#filter_toggle_container span:nth-child(2) {
+	transform: rotate(-45deg) translate(2px, -2px);
+	background-color: var(--secondary);
+}
+
+/* LUK KNAP FOR FILTER SIDEMENU  */
 
 #filter_container aside label {
     font-family: var(--open);
@@ -269,82 +284,21 @@ font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
-footer {
-    background-color: var(--secondary);
-}
 
-footer p {
-    color: rgb(222, 222, 222);
-}
-
-footer h3 {
-    color: var(--accent);
-}
-
-#footer_service {
-    text-align: center;
-    padding: 2rem;
-}
-
-#footer_service p {
-    font-size: 1.2rem;
-}
-
-#footer_info {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 2rem;
-}
-
-.footer_line {
-    display: block;
-    background-color: var(--accent);
-    width: 86%;
-    height: 1px;
-    margin: auto;
-}
-
-#footer_copyright {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1rem;
-    text-align: center;
-    padding: 2rem;
-}
-
-.emark {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 90px;
-    height: 30px;
-}
-
-.copyrights {
-    grid-column: 1/span 3;
-    grid-row: 1/2;
-}
-
-.some_icons {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.some_icons div {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    gap: 1rem;
+.hidemenu {
+    display: none;
 }
 
 .showmenu {
-    left: 0;
+    display: block;
 }
 
 /* DESKTOP */
 @media (width >768px) {
 
+.hidemenu {
+    display: block;
+}
 
 #category_container {
     display: grid;
@@ -396,6 +350,11 @@ footer h3 {
     padding-top: 2rem;
     margin-bottom: auto;
     max-width: 100%;
+    box-shadow: none;
+}
+
+#filter_toggle_container {
+    display: none;
 }
 
 #filter_container aside div {
@@ -432,32 +391,6 @@ footer h3 {
 
     .rating {
         margin: 0;
-    }
-
-    .footer_line {
-        width: 95%;
-    }
-
-#footer_service {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-    #footer_info {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 4rem;
-        /* margin: auto; */
-    }
-
-    #footer_copyright {
-        padding: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
 }
