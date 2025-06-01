@@ -19,10 +19,6 @@
 
 	/* FONT SÆT */
 	--lora: "Lora", serif;
-<<<<<<< HEAD
-=======
-
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
 }
 
 * {
@@ -86,11 +82,7 @@ a {
 
 button {
     font-size: 1.125rem;
-<<<<<<< HEAD
-    font-weight: 500;
-=======
     font-weight: 600;
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
     line-height: 0;
     cursor: pointer;
 }

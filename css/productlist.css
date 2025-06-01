@@ -1,13 +1,6 @@
 /* GOOGLE FONTS */
 /* Lora Font */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
-<<<<<<< HEAD
-=======
-
-/* open sans font  */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
 
 
 
@@ -16,7 +9,6 @@
 /* ----- FARVER OG FONT SÆT ----- */
 :root {
     /* FARVER SÆT */
-<<<<<<< HEAD
     --primary: #f9f9f9;
 	--transparent: #ffffffe6;
 	--secondary: #050f33;
@@ -26,29 +18,12 @@
 
 	/* FONT SÆT */
 	--lora: "Lora", serif;
-=======
-    --primary: #ffffff;
-    --light-primary: #256af6;
-    /* For test purposes */
-    --secondary: #050F33;
-    --accent: #DECDA1;
-
-    /* FONT SÆT */
-    --lora: "Lora", serif;
-    --open: "Open Sans", sans-serif;
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
 }
 
 * {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-/* MOBIL */
-/* p, h1, h2, a {
-    font-family: var(--lora);
-} */
-=======
 body {
     background-color: var(--primary);
 }
@@ -56,7 +31,6 @@ body {
 #list_main {
     padding: 0;
 }
->>>>>>> 8712b051c9a23bc8d67f649d6e3ceaabcb70ed94
 
 a {
     text-decoration: none;
