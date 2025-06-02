@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/single.css" />
-    <script src="/js/product_list.js" defer></script>
+    <script src="js/single.js" defer></script>
   </head>
 
   <body>
@@ -139,76 +139,95 @@
     </header>
 
     <main id="single_main">
-      <section id="product">
-        <article id="img">
-          <img id="product_img" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/8147318_500x.jpg?v=1678794347" alt="">
-        </article>
-        <article id="product_info">
-          <h1>Studio Z More ring i sølv</h1>
-          <p id="price">295,00 kr</p>
-          <p>Model: 7147318</p>
-          <p>Inkl. moms</p>
-          <p>Kun 73,75 kr./md med</p>
-          <p><strong>Størrelse</strong> 50</p>
-          <div id="size">
-            <button class="sizebtn">50</button>
-            <button class="sizebtn">52</button>
-            <button class="sizebtn">54</button>
-            <button class="sizebtn">56</button>
-            <button class="sizebtn">58</button>
-          </div>
-          <div id="amount">
-            <p>ANTAL</p>
-           <input type="number"/>
-          </div>
-          <button id="buybtn">Læg i kurv</button>
+      <div id="product_wrapper">
+        <section id="product">
+          <!-- <article id="img_container">
+            <img src="https://www.guldsmedpade-shop.dk/cdn/shop/products/8147318_500x.jpg?v=1678794347" alt="" />
+            <span class="leftarrow"><img src="assets/arrowicon.svg" alt="arrow" /></span>
+            <span class="rightarrow"><img src="assets/arrowicon.svg" alt="arrow" /></span>
+          </article>
+          <article id="product_info">
+            <aside class="titel_pris">
+              <h1>Studio Z More ring i sølv</h1>
+              <p id="price">295,00 kr</p>
+            </aside> -->
+          </article>
+        </section>
+        <section id="product_misc">
+          <span class="product_line"></span>
+          <article class="product_size_buy">
+            <div>
+              <p>Model: undefined</p>
+              <h4>Inkl. moms</h4>
+            </div>
+            <div>
+              <p><strong>STØRRELSE:</strong></p>
+              <div id="size">
+                <button class="sizebtn selected">50</button>
+                <button class="sizebtn">52</button>
+                <button class="sizebtn">54</button>
+                <button class="sizebtn">56</button>
+                <button class="sizebtn">58</button>
+              </div>
+            </div>
+            <div id="amount">
+              <p><strong>ANTAL</strong></p>
+              <input type="number" value="1" />
+            </div>
+            <button id="buybtn">Læg i kurv</button>
+          </article>
+          <span class="product_line"></span>
           <p>Normalt klar inden for 24 timer</p>
-          <p><a href="#">Se alle ...</a></p>
-          <strong>Detaljer</strong>
-          <p>More ringen er en Studio Z darling og har et helt særligt udtryk med sine to asymmetriske bånd af hvide zirkoniasten i to forskellige størrelser. Ringen er lavet i 925 sterling sølv. </p>
-          <p>Denne ring har et eksklusivt udtryk med sine mange sten, og kan let sammensættes med eksempel Plain eller en dobbelt More ring for et mere chunky look. Lad den stå alene eller tilføj ringen til dit look for et ekstra glimt fra de fine zirkonia bånd.</p>
-          <p>Ringen findes i størrelserne 50 - 58.</p>
-          <div id="share">
-            <p>Del</p>
-            <img src="assets/facebook_twitter.png" alt="">
-          </div>
-        </article>
-      </section>
-      <section id="related">
-        <h3>Relaterede produkter</h3>
-        <article id="related_products">
-          <div class="card">
-                    <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="">
-                    <p>Georg Jensen Mercy earring 18 kt. guld</p>
-                    <p>6500kr.</p>
-                </div>
-                <div class="card">
-                    <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="">
-                    <p>Georg Jensen Mercy earring 18 kt. guld</p>
-                    <p>6500kr.</p>
-                </div>
-                <div class="card">
-                    <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="">
-                    <p>Georg Jensen Mercy earring 18 kt. guld</p>
-                    <p>6500kr.</p>
-                </div>
-                <div class="card">
-                    <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="">
-                    <p>Georg Jensen Mercy earring 18 kt. guld</p>
-                    <p>6500kr.</p>
-                </div>
-                <div class="card">
-                    <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="">
-                    <p>Georg Jensen Mercy earring 18 kt. guld</p>
-                    <p>6500kr.</p>
-                </div>
-                <div class="card">
-                    <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="">
-                    <p>Georg Jensen Mercy earring 18 kt. guld</p>
-                    <p>6500kr.</p>
-                </div>
-        </article>
-      </section>
+          <span class="product_line"></span>
+          <article class="details">
+            <div class="button_container">
+              <button>Detaljer</button>
+              <button>Fabriksinformation</button>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet felis a urna posuere malesuada vitae lacinia elit. Curabitur tortor mi, tempor sed venenatis et, porta a velit. Nulla dui lacus, mollis eget congue non,
+              sollicitudin non tortor. Suspendisse aliquet scelerisque neque in pharetra. Nulla facilisi. Nunc non arcu efficitur diam lacinia dictum. .
+            </p>
+
+            <p>Ringen findes i størrelserne 50 - 58.</p>
+          </article>
+        </section>
+        <section id="related">
+          <h3>Relaterede produkter</h3>
+          <article id="related_products">
+            <div class="card">
+              <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="" />
+              <p>Georg Jensen Mercy earring 18 kt. guld</p>
+              <p>6500kr.</p>
+            </div>
+            <div class="card">
+              <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="" />
+              <p>Georg Jensen Mercy earring 18 kt. guld</p>
+              <p>6500kr.</p>
+            </div>
+            <div class="card">
+              <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="" />
+              <p>Georg Jensen Mercy earring 18 kt. guld</p>
+              <p>6500kr.</p>
+            </div>
+            <div class="card">
+              <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="" />
+              <p>Georg Jensen Mercy earring 18 kt. guld</p>
+              <p>6500kr.</p>
+            </div>
+            <div class="card">
+              <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="" />
+              <p>Georg Jensen Mercy earring 18 kt. guld</p>
+              <p>6500kr.</p>
+            </div>
+            <div class="card">
+              <img class="productimg" src="https://www.guldsmedpade-shop.dk/cdn/shop/products/20001079_MERCY_EARRING_1636E_YG_DIAMOND_0.40ct_800x.jpg?v=1656418404" alt="" />
+              <p>Georg Jensen Mercy earring 18 kt. guld</p>
+              <p>6500kr.</p>
+            </div>
+          </article>
+        </section>
+      </div>
     </main>
 
     <footer>

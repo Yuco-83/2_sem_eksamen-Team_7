@@ -1,16 +1,47 @@
+/* GOOGLE FONTS */
+/* Lora Font */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+
+
+/* ----- GENERELLE STYLES ----- */
+/* ----- FARVER OG FONT SÆT ----- */
+:root {
+    /* FARVER SÆT */
+    --primary: #f9f9f9;
+	--transparent: #ffffffe6;
+	--secondary: #050f33;
+	--secondary-light: #353e5e;
+	--accent: #decda1;
+	--accent-dark: #857b61;
+
+	/* FONT SÆT */
+	--lora: "Lora", serif;
+}
+
 #single_main {
-    margin: 1rem;
+    padding: 2rem;
+    background-color: var(--primary);
+    margin-bottom: 2rem;
 }
 
 #size {display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;}
 
+
 .sizebtn {
     padding: 1.3rem 1.7rem;
-  border: 1px solid #ccc;
-  background: white;
+  border: 0.2px solid var(--secondary);
+  background-color: var(--primary);
   cursor: pointer;
+}
+
+.selected {
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 #amount {
@@ -19,21 +50,30 @@
     align-items: center;
 }
 
+#amount p {
+    font-size: 1.2rem;
+}
+
 input {
+    width: 60px;
     padding: 1rem;
   border: 1px solid #ccc;
   background: white;
+
 }
 
 #buybtn {
-    padding: 1.6rem 9.7rem;
-     background-color: black;
-  color: white;
+    width: fit-content;
+    padding: 1.5rem 4rem;
+     background-color: var(--accent);
+  color: var(--secondary);
   border: none;
 }
 
 #buybtn:hover {
-    background-color: rgb(94, 94, 94);
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: 0.2s;
 }
 
 a {
@@ -57,10 +97,109 @@ a {
   padding: 10px;
 }
 
-.card {padding: 10px;
+#related {
+    display: none;
+}
+
+.card {
+    padding: 10px;
     margin: 0.5rem;
     text-align: center; }
 
-.productimg {
+#img_container {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+}
+
+#img_container img {
     max-width: 100%;
+}
+
+#img_container .leftarrow {
+   position: absolute;
+   top: 50%;
+   left: 0.7rem;
+   transform: translate(0, -50%);
+   opacity: 30%;
+}
+
+#img_container .rightarrow{
+   position: absolute;
+   top: 45.5%;
+   right: 0.7rem;
+   transform: translate(0, -50%);
+   transform: scale(-1, -1);
+   opacity: 30%;
+}
+
+.product_line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.233);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product_size_buy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.details {
+    margin-top: 1rem;
+}
+
+.details p {
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.button_container button {
+    width: fit-content;
+    padding: 1.4rem;
+    background-color: var(--primary);
+    /* border: 1px solid var(--secondary); */
+    border: none;
+    font-weight: 550;
+    text-decoration: 1px underline;
+}
+
+.button_container button:hover {
+    background-color: rgb(224, 224, 224);
+    transition: 0.2s;
+}
+
+@media (width >768px) {
+    #product_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #img_container .leftarrow, .rightarrow {
+        display: none;
+    }
+
+    #product {
+        grid-column: 1/2;
+    }
+
+
+    #product_misc {
+        grid-column: 2/3;
+    }
+
+    .titel_pris {
+        width: fit-content;
+        margin-left: 3.5rem;
+    }
 }
